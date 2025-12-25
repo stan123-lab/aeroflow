@@ -13,3 +13,8 @@ app.get('/api/v1/Users/GetUserAccess', (req, res) => {
 
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
+// Add this block to your index.js
+app.get('/', (req, res) => {
+    res.send('Welcome to the Qualys Auth Demo App!');
+});
